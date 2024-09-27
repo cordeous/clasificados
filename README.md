@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ClasificadosOnline
+
+ClasificadosOnline is a Next.js-based e-commerce website that provides a platform for users to buy and sell various items across different categories.
+
+## Features
+
+- User-friendly interface for browsing and posting classified ads
+- Multiple categories including Real Estate, Vehicles, Jobs, and more
+- Dark mode support for comfortable viewing
+- Responsive design for desktop and mobile devices
+- Search functionality to find specific items
+- User authentication for posting and managing ads
 
 ## Getting Started
 
-First, run the development server:
+First, clone the repository and install the dependencies:
+
+```bash
+git clone https://github.com/your-username/clasificados-online.git
+cd clasificados-online
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `app/`: Contains the main application code
+  - `components/`: Reusable React components
+  - `pages/`: Next.js pages and API routes
+  - `styles/`: CSS and styling files
+- `public/`: Static assets
+
+## Technologies Used
+
+- [Next.js](https://nextjs.org): React framework for building the application
+- [React](https://reactjs.org): JavaScript library for building user interfaces
+- [TypeScript](https://www.typescriptlang.org): Typed superset of JavaScript
+- [Tailwind CSS](https://tailwindcss.com): Utility-first CSS framework for styling
+- [Lucide React](https://lucide.dev): Icon set for the user interface
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about the technologies used in this project, check out the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js Documentation](https://nextjs.org/docs)
+- [React Documentation](https://reactjs.org/docs/getting-started.html)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is open source and available under the [MIT License](LICENSE).
