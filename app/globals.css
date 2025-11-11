@@ -3,21 +3,52 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: dark;
+  --background: #050b19;
+  --foreground: #f8fafc;
+  --muted: #94a3b8;
+  --accent: #34d399;
+  --surface: rgba(15, 23, 42, 0.72);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    color-scheme: light;
+    --background: #f8fafc;
+    --foreground: #0f172a;
+    --muted: #475569;
+    --accent: #0ea5e9;
+    --surface: rgba(255, 255, 255, 0.82);
   }
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  margin: 0;
+  min-height: 100vh;
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background:
+    radial-gradient(120% 120% at 20% -10%, rgba(56, 189, 248, 0.18), transparent 60%),
+    radial-gradient(110% 110% at 80% -20%, rgba(16, 185, 129, 0.14), transparent 55%),
+    var(--background);
+  background-attachment: fixed;
+  font-family: var(--font-geist-sans, "Inter", "Segoe UI", system-ui, -apple-system, sans-serif);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: rgba(56, 189, 248, 0.35);
+  color: #f8fafc;
 }
 
 @layer utilities {
